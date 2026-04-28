@@ -1,0 +1,63 @@
+# Smithery Registry — hive-mcp-credit-broker
+# https://smithery.ai
+
+startCommand:
+  type: http
+  configSchema:
+    type: object
+    properties: {}
+    required: []
+  url: https://hive-mcp-credit-broker.onrender.com/mcp
+
+name: hive-mcp-credit-broker
+displayName: hive-mcp-credit-broker — broker-only credit/lending discovery
+version: "1.0.0"
+description: >
+  Broker-only credit/lending discovery shim. Surfaces real lending markets
+  from licensed/established third-party protocols: Aave v3, Compound v3,
+  Morpho Blue, Spark, Maple, Goldfinch. Returns provider, asset, supply
+  APY, borrow APY, utilization, and total liquidity. Routing/discovery
+  only — Hive does not lend, originate, hold collateral, or service debt.
+  All credit products are provided by third-party protocols. Verify
+  protocol terms, audit status, and licensing before borrowing.
+  MCP 2024-11-05 over Streamable-HTTP.
+
+author:
+  name: Steve Rotzin
+  email: steve@thehiveryiq.com
+  url: https://www.thehiveryiq.com
+
+license: MIT
+homepage: https://github.com/srotzin/hive-mcp-credit-broker
+repository:
+  type: git
+  url: https://github.com/srotzin/hive-mcp-credit-broker
+
+transport: streamable-http
+endpoint: https://hive-mcp-credit-broker.onrender.com/mcp
+protocol: "2024-11-05"
+
+categories:
+  - finance
+  - lending
+  - agent-to-agent
+  - web3
+  - defi
+
+tags:
+  - mcp
+  - hive
+  - credit
+  - lending
+  - broker
+  - aave
+  - compound
+  - morpho
+  - spark
+  - maple
+  - goldfinch
+  - defi
+  - ai-agents
+  - a2a
+
+disclaimer: "Hive is a broker-only directory. Hive does not lend, originate, hold collateral, or service debt. All credit products are provided by third-party protocols. Verify protocol terms, audit status, and licensing before borrowing."
