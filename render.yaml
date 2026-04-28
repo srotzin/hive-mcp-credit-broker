@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: hive-mcp-credit-broker
+    env: node
+    plan: free
+    region: oregon
+    branch: main
+    buildCommand: npm install
+    startCommand: node server.js
+    autoDeploy: true
+    envVars:
+      - key: ENABLED
+        value: "true"
+      - key: HIVEMORPH_UPSTREAM
+        value: https://hivemorph.onrender.com
+      - key: UPSTREAM_TIMEOUT_MS
+        value: "8000"
+    healthCheckPath: /health
