@@ -1,5 +1,7 @@
 # hive-mcp-credit-broker
 
+[![srotzin/hive-mcp-credit-broker MCP server](https://glama.ai/mcp/servers/srotzin/hive-mcp-credit-broker/badges/score.svg)](https://glama.ai/mcp/servers/srotzin/hive-mcp-credit-broker)
+
 **Broker-only** credit/lending discovery shim for AI agents. Surfaces real
 lending markets from licensed/established third-party protocols and
 routes applications.
